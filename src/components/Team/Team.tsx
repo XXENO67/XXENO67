@@ -1,24 +1,7 @@
 import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
-import { MessageCircle, Crown, Shield, Wrench } from 'lucide-react'
 import siteConfig from '../../config/site.config.json'
-import { cn } from '../../utils/cn'
-import { getAssetUrl } from '../../utils/assetUrl'
-
-const roleIcons: Record<string, React.ReactNode> = {
-  'Server Owner': <Crown className="w-4 h-4" />,
-  'Head Admin': <Shield className="w-4 h-4" />,
-  'Developer': <Wrench className="w-4 h-4" />,
-  'Moderator': <MessageCircle className="w-4 h-4" />
-}
-
-const roleColors: Record<string, string> = {
-  'Server Owner': 'from-yellow-400 to-orange-500',
-  'Head Admin': 'from-red-400 to-pink-500',
-  'Developer': 'from-blue-400 to-cyan-500',
-  'Moderator': 'from-green-400 to-teal-500'
-}
 
 export const Team = () => {
   const containerRef = useRef<HTMLElement>(null)
