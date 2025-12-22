@@ -20,7 +20,7 @@ export const BottomNavigation = () => {
   const navItems: NavItem[] = [
     { 
       id: 'home', 
-      label: 'Home', 
+      label: 'Start', 
       icon: <Home size={20} />,
       href: '#home'
     },
@@ -45,7 +45,7 @@ export const BottomNavigation = () => {
     },
     { 
       id: 'connect', 
-      label: 'Connect', 
+      label: 'Verbinden', 
       icon: <Plug size={20} />,
       href: '#connect'
     }
@@ -178,12 +178,15 @@ export const BottomNavigation = () => {
   }
 
   const handleConnect = () => {
-    // Copy server IP to clipboard
+    // Open CFX.re link directly
+    window.open('https://cfx.re/join/48baqq', '_blank')
+    
+    // Also copy server IP to clipboard as fallback
     navigator.clipboard.writeText(siteConfig.server.ip).then(() => {
       // Show toast notification
       const toast = document.createElement('div')
       toast.className = 'fixed bottom-20 left-1/2 transform -translate-x-1/2 bg-gta-green text-white px-4 py-2 rounded-lg shadow-lg z-50 animate-bounce-in'
-      toast.textContent = `Server IP copied: ${siteConfig.server.ip}`
+      toast.textContent = `Server IP kopiert: ${siteConfig.server.ip}`
       document.body.appendChild(toast)
       
       setTimeout(() => {
@@ -191,9 +194,6 @@ export const BottomNavigation = () => {
         setTimeout(() => toast.remove(), 300)
       }, 3000)
     })
-
-    // Open FiveM if available
-    window.open(`fivem://connect/${siteConfig.server.ip}`, '_blank')
   }
 
   return (

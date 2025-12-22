@@ -7,20 +7,20 @@ export default {
   theme: {
     extend: {
       colors: {
-        // GTA V Official Colors
+        // Purple/Violet Theme Colors
         'gta': {
-          'black': '#0d1116',
-          'graphite': '#1c1d21',
-          'dark': '#32383d',
-          'medium': '#454b4f',
-          'light': '#979a97',
+          'black': '#0d0a1a',
+          'graphite': '#1a1625',
+          'dark': '#2d2438',
+          'medium': '#4a3f5f',
+          'light': '#9b8fb7',
           'white': '#ffffff',
-          'green': '#47761E',
-          'gold': '#FED985',
-          'blue': '#61B5CB',
-          'salmon': '#F09E71',
-          'purple': '#D5A0C4',
-          'olive': '#488F21',
+          'green': '#8B5CF6',
+          'gold': '#C084FC',
+          'blue': '#A855F7',
+          'salmon': '#DDD6FE',
+          'purple': '#8B5CF6',
+          'olive': '#7C3AED',
         }
       },
       fontFamily: {
@@ -60,8 +60,8 @@ export default {
         },
       },
       backgroundImage: {
-        'gta-gradient': 'linear-gradient(135deg, #0d1116 0%, #1c1d21 100%)',
-        'loading-gradient': 'linear-gradient(90deg, transparent, rgba(254, 217, 133, 0.1), transparent)',
+        'gta-gradient': 'linear-gradient(135deg, #0d0a1a 0%, #1a1625 100%)',
+        'loading-gradient': 'linear-gradient(90deg, transparent, rgba(192, 132, 252, 0.1), transparent)',
       },
       boxShadow: {
         'gta': '0 4px 30px rgba(0, 0, 0, 0.3)',

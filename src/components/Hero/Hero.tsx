@@ -161,10 +161,10 @@ export const Hero = () => {
                 style={{ width: `${loadingProgress}%` }}
               />
             </div>
-            <p className="text-gta-light text-sm mt-2">Loading... {loadingProgress}%</p>
+            <p className="text-gta-light text-sm mt-2">Lädt... {loadingProgress}%</p>
           </div>
           <p className="text-gta-light text-sm animate-pulse">
-            Press any key to continue
+            Drücke eine beliebige Taste um fortzufahren
           </p>
         </div>
       </div>
@@ -193,13 +193,13 @@ export const Hero = () => {
             <div ref={characterRef} className="relative">
               <div className="aspect-[3/4] bg-gradient-to-br from-gta-dark to-gta-graphite rounded-lg overflow-hidden shadow-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=600&h=800&fit=crop&q=80" 
+                  src="https://files.fivemerr.com/images/64cfa9f4-1743-44f3-864c-6fd93bbc41f4.png" 
                   alt="GTA Character" 
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gta-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-0 left-0 p-8">
-                  <h2 className="text-4xl font-bebas text-gta-gold mb-2">Welcome to</h2>
+                  <h2 className="text-4xl font-bebas text-gta-gold mb-2">Willkommen in</h2>
                   <h1 className="text-6xl font-bebas text-white text-shadow-lg">Los Santos</h1>
                 </div>
               </div>
@@ -223,7 +223,7 @@ export const Hero = () => {
               {/* Server Stats */}
               <div ref={statsRef} className="grid grid-cols-2 gap-4 mb-8">
                 <div className="stat-item">
-                  <p className="stat-label">Players Online</p>
+                  <p className="stat-label">Spieler Online</p>
                   <p className="stat-value">{playerCount}/{siteConfig.server.maxPlayers}</p>
                 </div>
                 <div className="stat-item">
@@ -233,11 +233,11 @@ export const Hero = () => {
                   </p>
                 </div>
                 <div className="stat-item">
-                  <p className="stat-label">Active Jobs</p>
+                  <p className="stat-label">Aktive Jobs</p>
                   <p className="stat-value">{siteConfig.jobs.list.length}+</p>
                 </div>
                 <div className="stat-item">
-                  <p className="stat-label">Uptime</p>
+                  <p className="stat-label">Verfügbarkeit</p>
                   <p className="stat-value">99.9%</p>
                 </div>
               </div>
@@ -245,10 +245,12 @@ export const Hero = () => {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <a 
-                  href={`fivem://connect/${siteConfig.api.serverCode}`}
+                  href="https://cfx.re/join/48baqq"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="btn-gta inline-block text-center"
                 >
-                  Connect to Server
+                  Mit Server verbinden
                 </a>
                 <a 
                   href={siteConfig.server.discord}
@@ -256,7 +258,7 @@ export const Hero = () => {
                   rel="noopener noreferrer"
                   className="btn-gta-outline"
                 >
-                  Join Discord
+                  Discord beitreten
                 </a>
                 {siteConfig.whitelist.enabled && (
                   <a 
@@ -265,7 +267,7 @@ export const Hero = () => {
                     rel="noopener noreferrer"
                     className="btn-gta-gold"
                   >
-                    Apply for Whitelist
+                    Für Whitelist bewerben
                   </a>
                 )}
               </div>
@@ -274,14 +276,14 @@ export const Hero = () => {
               <div className="mt-8 p-4 bg-gta-graphite/50 backdrop-blur-sm rounded">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-gta-light text-sm">Server Address</p>
+                    <p className="text-gta-light text-sm">Server Adresse</p>
                     <p className="text-white font-mono text-lg">{siteConfig.server.ip}</p>
                   </div>
                   <button 
                     onClick={() => navigator.clipboard.writeText(siteConfig.server.ip)}
                     className="px-4 py-2 bg-gta-dark hover:bg-gta-medium transition-colors rounded"
                   >
-                    Copy IP
+                    IP kopieren
                   </button>
                 </div>
               </div>
@@ -291,9 +293,9 @@ export const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
         <div className="flex flex-col items-center gap-2 animate-bounce">
-          <p className="text-gta-light text-sm uppercase tracking-wider">Scroll</p>
+          <p className="text-gta-light text-sm uppercase tracking-wider">Scrollen</p>
           <svg className="w-6 h-6 text-gta-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

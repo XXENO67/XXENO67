@@ -87,7 +87,7 @@ export const Features = () => {
             Server Features
           </h2>
           <p className="text-xl text-gta-light max-w-2xl mx-auto">
-            Everything you need for the ultimate roleplay experience
+            Alles was du für das ultimative Roleplay-Erlebnis brauchst
           </p>
         </div>
 

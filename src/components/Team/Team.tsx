@@ -139,10 +139,10 @@ export const Team = () => {
             ref={titleRef}
             className="text-4xl md:text-6xl font-gaming font-bold mb-4"
           >
-            <span className="gradient-text">Our Team</span>
+            <span className="gradient-text">Unser Team</span>
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-            Meet the dedicated team behind the server
+            Lerne das engagierte Team hinter dem Server kennen
           </p>
         </div>
 
@@ -163,29 +163,19 @@ export const Team = () => {
                   <div className="avatar-container mb-4 relative inline-block">
                     <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-br from-neon-cyan to-neon-magenta p-[2px]">
                       <img 
-                        src={getAssetUrl(member.avatar)}
+                        src="https://files.fivemerr.com/images/d587e566-0d35-48d4-9a30-58a209868ff1.png"
                         alt={member.name}
                         className="w-full h-full rounded-full object-cover"
                       />
                     </div>
-                    
-                    {/* Role badge */}
-                    <div className={cn(
-                      "absolute -bottom-2 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-medium",
-                      "bg-gradient-to-r text-white flex items-center gap-1",
-                      roleColors[member.role] || 'from-gray-400 to-gray-600'
-                    )}>
-                      {roleIcons[member.role]}
-                      <span>{member.role}</span>
-                    </div>
                   </div>
 
                   {/* Member info */}
-                  <h3 className="text-lg font-gaming font-semibold mb-1 mt-4 text-neon-cyan">
+                  <h3 className="text-lg font-gaming font-semibold mb-1 text-neon-cyan">
                     {member.name}
                   </h3>
                   <p className="text-sm text-gray-400 mb-3">
-                    {member.description}
+                    {member.role}
                   </p>
 
                   {/* Discord username */}
@@ -210,14 +200,14 @@ export const Team = () => {
         {/* Join Team CTA */}
         <div className="mt-16 text-center">
           <div className="inline-block">
-            <p className="text-gray-400 mb-4">Want to join our team?</p>
+            <p className="text-gray-400 mb-4">Möchtest du unserem Team beitreten?</p>
             <a 
               href={siteConfig.social.discord}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
             >
-              Apply on Discord
+              Auf Discord bewerben
             </a>
           </div>
         </div>

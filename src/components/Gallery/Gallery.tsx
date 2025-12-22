@@ -110,10 +110,10 @@ export const Gallery = () => {
               ref={titleRef}
               className="text-4xl md:text-6xl font-gaming font-bold mb-4"
             >
-              <span className="gradient-text">Gallery</span>
+              <span className="gradient-text">Galerie</span>
             </h2>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Capture the best moments from our server
+              Halte die besten Momente von unserem Server fest
             </p>
           </div>
 
@@ -133,16 +133,6 @@ export const Gallery = () => {
                   loading="lazy"
                 />
                 
-                {/* Overlay */}
-                <div className="gallery-overlay absolute inset-0 bg-gradient-to-t from-gta-black/90 via-transparent to-transparent opacity-0 transition-opacity flex items-end p-4">
-                  <div>
-                    <h3 className="text-lg font-bebas text-white">{image.title}</h3>
-                    <p className="text-sm text-gta-light">
-                      {image.alt}
-                    </p>
-                  </div>
-                </div>
-
                 {/* Border effect */}
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-gta-gold/50 rounded-lg transition-all duration-300" />
               </div>

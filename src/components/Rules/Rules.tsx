@@ -72,10 +72,10 @@ export const Rules = () => {
         <div ref={titleRef} className="text-center mb-16">
           <Shield className="w-16 h-16 text-gta-gold mx-auto mb-4" />
           <h2 className="text-5xl md:text-7xl font-bebas text-white mb-4">
-            Server Rules
+            Server Regeln
           </h2>
           <p className="text-xl text-gta-light max-w-2xl mx-auto">
-            Follow these guidelines for the best roleplay experience
+            Befolge diese Richtlinien für das beste Roleplay-Erlebnis
           </p>
         </div>
 
@@ -110,7 +110,7 @@ export const Rules = () => {
                     <div className="flex items-center gap-2 text-gta-gold/80 text-sm">
                       <AlertTriangle className="w-4 h-4" />
                       <span className="uppercase tracking-wider">
-                        Violation may result in ban
+                        Verstoß kann zu einem Ban führen
                       </span>
                     </div>
                   </div>
@@ -124,20 +124,20 @@ export const Rules = () => {
             <div className="card-gta bg-gradient-to-br from-gta-dark to-gta-graphite text-center p-12">
               <AlertTriangle className="w-16 h-16 text-gta-gold mx-auto mb-6" />
               <h3 className="text-3xl font-bebas text-white mb-4">
-                Remember
+                Denk daran
               </h3>
               <p className="text-gta-light mb-8 max-w-2xl mx-auto">
-                Breaking any of these rules may result in warnings, temporary bans, 
-                or permanent removal from the server. Our admin team reserves the 
-                right to take action based on the severity of the violation.
+                Das Brechen einer dieser Regeln kann zu Verwarnungen, temporären Bans 
+                oder permanenter Entfernung vom Server führen. Unser Admin-Team behält sich 
+                das Recht vor, basierend auf der Schwere des Verstoßes zu handeln.
               </p>
               <a 
-                href={siteConfig.social.discord}
+                href="https://sites.google.com/view/bandolerorpregelwerk/regelwerk?authuser=1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-gta-gold inline-block"
               >
-                Read Full Rulebook on Discord
+                Vollständiges Regelwerk hier lesen
               </a>
             </div>
           </div>

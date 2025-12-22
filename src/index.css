@@ -15,17 +15,17 @@
 
 @layer base {
   :root {
-    /* GTA V Color System */
-    --gta-black: #0d1116;
-    --gta-graphite: #1c1d21;
-    --gta-dark: #32383d;
-    --gta-medium: #454b4f;
-    --gta-light: #979a97;
+    /* Purple/Violet Color System */
+    --gta-black: #0d0a1a;
+    --gta-graphite: #1a1625;
+    --gta-dark: #2d2438;
+    --gta-medium: #4a3f5f;
+    --gta-light: #9b8fb7;
     --gta-white: #ffffff;
-    --gta-green: #47761E;
-    --gta-gold: #FED985;
-    --gta-blue: #61B5CB;
-    --gta-salmon: #F09E71;
+    --gta-green: #8B5CF6;
+    --gta-gold: #C084FC;
+    --gta-blue: #A855F7;
+    --gta-salmon: #DDD6FE;
   }
 
   * {

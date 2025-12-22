@@ -6,12 +6,12 @@ import siteConfig from '../../config/site.config.json'
 import { BottomNavigation } from './BottomNavigation'
 
 const navItems = [
-  { id: 'home', label: 'Home', href: '#home', icon: <Home className="w-5 h-5" /> },
+  { id: 'home', label: 'Start', href: '#home', icon: <Home className="w-5 h-5" /> },
   { id: 'features', label: 'Features', href: '#features', icon: <Shield className="w-5 h-5" /> },
   { id: 'jobs', label: 'Jobs', href: '#jobs', icon: <Briefcase className="w-5 h-5" /> },
-  { id: 'rules', label: 'Rules', href: '#rules', icon: <ScrollText className="w-5 h-5" /> },
+  { id: 'rules', label: 'Regeln', href: '#rules', icon: <ScrollText className="w-5 h-5" /> },
   { id: 'team', label: 'Team', href: '#team', icon: <Users className="w-5 h-5" /> },
-  { id: 'gallery', label: 'Gallery', href: '#gallery', icon: <Image className="w-5 h-5" /> }
+  { id: 'gallery', label: 'Galerie', href: '#gallery', icon: <Image className="w-5 h-5" /> }
 ]
 
 export const Navigation = () => {
@@ -168,10 +168,12 @@ const DesktopNavigation = () => {
             {/* CTA Buttons - Desktop */}
             <div className="flex items-center gap-4 opacity-100 animate-fade-in">
               <a 
-                href={`fivem://connect/${siteConfig.api.serverCode}`}
+                href="https://cfx.re/join/48baqq"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-2 text-sm font-inter font-medium uppercase tracking-wider bg-gta-green text-white hover:bg-gta-green/90 transition-all duration-300 inline-block text-center"
               >
-                Connect
+                Verbinden
               </a>
               <a 
                 href={siteConfig.social.discord}

@@ -205,4 +205,4 @@ If Swisser-Web-01 helps your server grow, consider:
   <a href="https://swisser.dev/discord"><strong>Get Started Today →</strong></a>
   <br><br>
   <i>Built with ❤️ by Swisser Development Team</i>
-</div>
+</div> 
